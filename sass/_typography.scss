@@ -1,0 +1,27 @@
+.header {
+    &__title {
+      font-size: $text-extra-large;
+      font-weight: 400;
+      margin-top: 8rem;
+
+      animation: moveInLeft 1s ease-in-out;
+    }
+
+    &__title2 {
+        font-size: $text-extra-large;
+        font-weight: 400;
+        margin-top: 8rem;
+        display: inline-block;
+  
+        animation: moveInRight 1s ease-in-out;
+      }
+
+    &__subtitle {
+      font-size: $text-large;
+      font-weight: 200;
+      margin-top: -2rem;
+
+      animation: appear 2.5s  ease;
+    }
+  
+  }

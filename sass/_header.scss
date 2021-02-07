@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  
+  &__logo {
+    margin: 4rem;
+    height: 8rem;
+    width: 8rem;
+  }
+
+  &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+
+      margin-top: 7.5rem;
+   
+  }
+}
