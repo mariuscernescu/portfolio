@@ -1,27 +1,50 @@
 .header {
-    &__title {
-      font-size: $text-extra-large;
-      font-weight: 400;
-      margin-top: 8rem;
+  &__title {
+    font-size: $text-title;
+    font-weight: 400;
+    margin-top: 8rem;
 
-      animation: moveInLeft 1s ease-in-out;
-    }
-
-    &__title2 {
-        font-size: $text-extra-large;
-        font-weight: 400;
-        margin-top: 8rem;
-        display: inline-block;
-  
-        animation: moveInRight 1s ease-in-out;
-      }
-
-    &__subtitle {
-      font-size: $text-large;
-      font-weight: 200;
-      margin-top: -2rem;
-
-      animation: appear 2.5s  ease;
-    }
-  
+    animation: moveInLeft 1s ease-in-out;
   }
+
+  &__subtitle {
+    font-size: $text-large;
+    font-weight: 200;
+    margin-top: -2rem;
+
+    animation: appear 2.5s ease;
+  }
+}
+
+.about {
+  &__header {
+    &--primary {
+      text-align: center;
+      font-size: $text-extra-large;
+      font-weight: 200;
+      margin: 4.5rem;
+    }
+
+    &--second {
+      background-color: var(--color-yellow);
+      text-align: center;
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+
+      width: 14rem;
+
+      transform: skewX(-37deg);
+
+      h2 {
+        display: inline-block;
+        transform: skewX(37deg);
+        font-size: $text-medium;
+      }
+    }
+  }
+
+  &__text {
+    padding: 6rem;
+    font-size: $text-small;
+  }
+}

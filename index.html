@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -15,19 +15,175 @@
     <title>Marius's Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <section class="header">
       <div class="header__logo">
         <img src="img/logo.svg" alt="logo" />
       </div>
 
-      <h1 class="header__title">Marius Cernescu</h1>  
+      <h1 class="header__title">Marius Cernescu</h1>
       <h2 class="header__subtitle">Front end developer</h2>
 
       <nav class="header__nav">
-          <a href="#" class="btn"><span class="btn__text">About</span></a>
-          <a href="#" class="btn"><span class="btn__text">Projects</span></a>
-          <a href="#" class="btn"><span class="btn__text">Contact</span></a>
+        <a href="#" class="btn btn--large"
+          ><span class="btn__text">About</span></a
+        >
+        <a href="#" class="btn btn--large"
+          ><span class="btn__text">Projects</span></a
+        >
+        <a href="#" class="btn btn--large"
+          ><span class="btn__text">Contact</span></a
+        >
       </nav>
-    </header>
+    </section>
+
+    <section class="about">
+      <h1 class="about__header--primary">About</h1>
+      <div class="about__container">
+        <div class="about__story">
+          <p class="about__text">
+            Hey, thank you for visiting my website. I’m Marius, a
+            <b>Front end developer </b>currently based in Brasov, Romania, and
+            here is a short insight into my journey. <br /><br />
+            Technology and computers always fascinated me. I was that kid who
+            would disassemble my first computer just to find out how all the
+            pieces work together. Later, I was that friend you call when you
+            need to troubleshoot some error on your device. I would spend most
+            of my free time testing out a new Linux system, learning about
+            information security and keeping up to date with all the latest
+            technology. But somehow, I never got into learning how to code.<br /><br />
+            Until five months ago. After many years of living abroad, I found
+            myself back in Romania after my inernational travel plans got
+            cancelled because of the pandemic. I took this as a chance to build
+            a new career path and enrolled in a begginer web development course.
+            A few days later I was hooked and commited to #100DaysOfCode
+            challenge on Twitter.<br /><br />
+            I have been coding
+          </p>
+        </div>
+
+        <div class="about__skills">
+          <div class="about__header--second"><h2>Skills</h2></div>
+          <div class="about_img">
+            <img
+              class="about__img"
+              src="/img/skills.png"
+              alt="Image with my skills"
+            />
+          </div>
+          <div class="about__header--second"><h2>Courses</h2></div>
+          <div class="about__links">
+            <a href="#">CS50 Introduction to Computer Science by HarvardX </a>
+            <a href="#">Responsive Web Design by FreeCodeCamp </a>
+            <a href="#"
+              >Advanced CSS and Sass: Flexbox, Grid, Animations and More by
+              Udemy</a
+            >
+            <a href="#">The Modern Javascript Bootcamp Course</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h1 class="about__header--primary">Projects</h1>
+      <div class="projects__container">
+        <div class="projectbox">
+          <div class="projectbox__up">
+            <h3>Pass App</h3>
+          </div>
+          <div class="projectbox__down">
+            <p class="projectbox__text">
+              A password management app I created for my final project for CS50.
+            </p>
+            <a href="#" class="btn btn--small"
+              ><span class="btn__text">View project</span></a
+            >
+          </div>
+        </div>
+
+        <div class="projectbox">
+          <div class="projectbox__up">
+            <h3>The Maze Game</h3>
+          </div>
+          <div class="projectbox__down">
+            <p class="projectbox__text">
+              A simple game I developed as part of a JavaScript course.
+            </p>
+            <a href="#" class="btn btn--small"
+              ><span class="btn__text">View project</span></a
+            >
+          </div>
+        </div>
+
+        <div class="projectbox">
+          <div class="projectbox__up">
+            <h3>Personal Website</h3>
+          </div>
+          <div class="projectbox__down">
+            <p class="projectbox__text">
+              A project where I applied the skills I learned from all courses
+              with a focus on CSS.
+            </p>
+            <a href="#" class="btn btn--small"
+              ><span class="btn__text">View project</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h1 class="about__header--primary">Contact</h1>
+      <div class="contact__container">
+        <form class="contact__form">
+          <p class="contact__text">
+            If you’re looking for a new member in your team, drop me a line and
+            let’s meet.
+          </p>
+          <input
+            class="contact__name"
+            type="text"
+            placeholder="name"
+            required
+          />
+          <input
+            type="email"
+            class="contact__email"
+            placeholder="email"
+            required
+          />
+          <input type="text" class="contact__subject" placeholder="subject" />
+          <input
+            type="text"
+            class="contact__mesage"
+            placeholder="message"
+            required
+          />
+          <button class="btn btn--large">
+            <span class="btn__text">Submit</span>
+          </button>
+        </form>
+
+        <div class="social">
+          <p class="social_text">You can find me on</p>
+          <div class="social_icons">
+            <a href="https://github.com/mariuscernescu" target="_blank">
+              <img src="/img/001-github.svg" alt="Github link"
+            /></a>
+            <a href="https://twitter.com/CernescuMarius" target="_blank">
+              <img src="/img/003-twitter.svg" alt="Twitter link"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/mariuscernescu/"
+              target="_blank"
+              ><img src="/img/002-linkedin.svg" alt="Linkedin link"
+            /></a>
+            <a href="https://codepen.io/msctu" target="_blank"
+              ><img src="/img/004-codepen.svg" alt="Codepen link"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

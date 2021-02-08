@@ -1,0 +1,43 @@
+.contact {
+    height: 95vh;
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50rem;
+  }
+
+  &__text {
+  }
+
+  &__name {
+  }
+
+  &__email {
+  }
+
+  &__subject {
+  }
+
+  &__mesage {
+  }
+}
+
+.social {
+  background-color: var(--color-green);
+
+  height: 20rem;
+  width: 30rem;
+  &__icons {
+  }
+  a {
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.projects {
+    height: 100vh;
+    margin-bottom: 20rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 8rem;
+    }
+}
