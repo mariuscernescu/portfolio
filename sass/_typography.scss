@@ -48,3 +48,35 @@
     font-size: $text-small;
   }
 }
+
+.social {
+  &__text {
+    text-align: center;
+    font-size: $text-small;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact {
+  &__text {
+    font-size: $text-medium;
+    line-height: 1.2;
+    margin-bottom: 3.5rem;
+  }
+}
+
+::placeholder {
+  color: var(--color-grey-light);
+  font-size: $text-small;
+  font-weight: 200;
+  
+}
+
+textarea::placeholder {
+  color: var(--color-grey-light);
+  font-family: var(--font-primary);
+  font-size: $text-small;
+  font-weight: 300;
+  
+}
