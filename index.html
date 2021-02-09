@@ -153,20 +153,24 @@
             required
           />
           <input type="text" class="contact__subject" placeholder="subject" />
-          <input
-            type="text"
-            class="contact__mesage"
+
+        
+          <textarea
+            class="contact__message"
             placeholder="message"
             required
-          />
+            rows="8"
+            cols="20"></textarea>
+           
+         
           <button class="btn btn--large">
             <span class="btn__text">Submit</span>
           </button>
         </form>
 
         <div class="social">
-          <p class="social_text">You can find me on</p>
-          <div class="social_icons">
+          <p class="social__text">You can find me on</p>
+          <div class="social__icons">
             <a href="https://github.com/mariuscernescu" target="_blank">
               <img src="/img/001-github.svg" alt="Github link"
             /></a>
@@ -185,5 +189,10 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="footer__icon"><img src="/img/logo.svg" alt="site logo"></div>
+      <div class="footer__text"><p>Copyright © Marius Cernescu 2021</p></div>
+    </footer>
   </body>
 </html>

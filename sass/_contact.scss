@@ -1,43 +1,86 @@
 .contact {
-    height: 95vh;
+  height: 95vh;
+  margin-bottom: 20rem;
   &__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    margin-right: 50rem;
+    justify-content: center;
+    width: 35%;
+
+    button {
+      align-self: center;
+      margin-top: -1rem;
+    }
   }
 
-  &__text {
-  }
-
-  &__name {
-  }
-
-  &__email {
-  }
-
+  &__name,
+  &__email,
   &__subject {
+    height: 4.5rem;
+    margin-bottom: 3.5rem;
+    border: 2px solid var(--color-grey);
+    font-size: $text-small;
+    padding-left: 3rem;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      transform: scale(1.02);
+    }
   }
 
-  &__mesage {
+  &__message {
+    margin-bottom: 3.5rem;
+    border: 2px solid var(--color-grey);
+    transition: all 0.3s;
+
+    text-align: start;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    font-family: var(--font-primary);
+    font-size: $text-small;
+    font-weight: 300;
+
+    &:focus {
+      outline: none;
+      transform: scale(1.02);
+    }
   }
 }
 
 .social {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  width: 45rem;
+
   background-color: var(--color-green);
 
-  height: 20rem;
-  width: 30rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+  clip-path: polygon(0 0, 100% 0, 100% 100% 0 70%);
+
   &__icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 4rem;
   }
   a {
     img {
-      width: 3rem;
-      height: 3rem;
+      width: 3.8rem;
+      height: 3.8rem;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: translateY(-0.2rem) scale(1.05);
+      }
     }
   }
 }

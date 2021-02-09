@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  margin: 4rem;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  &__text {
+    font-size: $text-small;
+    font-weight: 400;
+  }
+}
