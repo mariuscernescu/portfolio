@@ -5,6 +5,13 @@
     margin-top: 8rem;
 
     animation: moveInLeft 1s ease-in-out;
+
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      font-size: $text-extra-large;
+      text-align: center;
+      
+    }
   }
 
   &__subtitle {
@@ -13,6 +20,13 @@
     margin-top: -2rem;
 
     animation: appear 2.5s ease;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    //600px
+    font-size: $text-medium;
+    text-align: center;
+    
   }
 }
 
@@ -46,6 +60,16 @@
   &__text {
     padding: 6rem;
     font-size: $text-small;
+    @media only screen and (max-width: 62.6em) {
+      //1000px
+      font-size: $text-medium;
+    }
+
+    @media only screen and (max-width: 56.25em) {
+      //1000px
+      font-size: $text-small;
+      
+    }
   }
 }
 
@@ -55,6 +79,16 @@
     font-size: $text-small;
     margin-top: 6rem;
     margin-bottom: 2rem;
+    
+    @media only screen and (max-width: 62.6em) {
+      //1000px
+      font-size: $text-medium;
+      margin-bottom: 4rem;
+    }
+
+    
+
+   
   }
 }
 
@@ -63,6 +97,7 @@
     font-size: $text-medium;
     line-height: 1.2;
     margin-bottom: 3.5rem;
+    margin-top: 4rem;
   }
 }
 
@@ -70,7 +105,6 @@
   color: var(--color-grey-light);
   font-size: $text-small;
   font-weight: 200;
-  
 }
 
 textarea::placeholder {
@@ -78,5 +112,4 @@ textarea::placeholder {
   font-family: var(--font-primary);
   font-size: $text-small;
   font-weight: 300;
-  
 }

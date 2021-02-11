@@ -1,8 +1,10 @@
 .footer {
   display: flex;
-  margin: 4rem;
+  margin: 4rem 4rem;
+  padding-top: 1rem;
   justify-content: center;
   align-items: center;
+
   &__icon {
     height: 3rem;
     width: 3rem;

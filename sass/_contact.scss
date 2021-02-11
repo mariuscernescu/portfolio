@@ -1,11 +1,16 @@
 .contact {
-  height: 95vh;
-  margin-bottom: 20rem;
+  box-shadow: var(--shadow-dark);
+  padding: 1rem 0 20rem 0;
+  margin: 1.5rem 1.5rem 4rem 1.5rem;
+
   &__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    @media only screen and (max-width: 62.6em) {
+      //1000px
+      flex-direction: column-reverse;
+    }
   }
 
   &__form {
@@ -13,6 +18,16 @@
     flex-direction: column;
     justify-content: center;
     width: 35%;
+
+    @media only screen and (max-width: 62.6em) {
+      //1000px
+      width: 65%;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      width: 95%;
+    }
 
     button {
       align-self: center;
@@ -61,6 +76,18 @@
   height: 30rem;
   width: 45rem;
 
+  @media only screen and (max-width: 62.6em) {
+    //1000px
+    height: 40rem;
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    //600px
+    height: 45rem;
+    width: 100%;
+  }
+
   background-color: var(--color-green);
 
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
@@ -77,6 +104,12 @@
       width: 3.8rem;
       height: 3.8rem;
       transition: all 0.2s;
+
+      @media only screen and (max-width: 62.6em) {
+        //1000px
+        width: 5rem;
+        height: 5rem;
+      }
 
       &:hover {
         transform: translateY(-0.2rem) scale(1.05);

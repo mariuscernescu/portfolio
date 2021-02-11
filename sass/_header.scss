@@ -4,8 +4,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-bottom: 20rem;
-  
+
+  box-shadow: var(--shadow-dark);
+  padding: 3rem 0 20rem 0;
+  margin: 1.5rem;
+
   &__logo {
     margin: 4rem;
     height: 8rem;
@@ -13,12 +16,11 @@
   }
 
   &__nav {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-      margin-top: 7.5rem;
-   
+    margin-top: 7.5rem;
   }
 }

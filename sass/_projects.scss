@@ -1,11 +1,18 @@
 .projects {
-    height: 100vh;
-    margin-bottom: 20rem;
+  
+  box-shadow: var(--shadow-dark);
+  padding: 1rem 0 20rem 0;
+  margin: 1.5rem;
+  
 
-    &__container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 8rem;
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media only screen and (max-width: 62.6em) { //1000px
+      flex-direction: column;
     }
+    
+  }
 }

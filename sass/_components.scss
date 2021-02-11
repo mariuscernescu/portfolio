@@ -44,7 +44,6 @@
   &:hover {
     transform: translateY(-3px) skewX(-37deg);
     box-shadow: var(--shadow-dark);
-    
   }
 
   &:hover &__text {
@@ -56,7 +55,6 @@
     outline: none;
     transform: translateY(-1px) skewX(-37deg);
     box-shadow: var(--shadow-light);
-    
   }
 
   &:active &__text,
@@ -70,14 +68,18 @@
   flex-direction: column;
   align-items: center;
   box-shadow: var(--shadow-dark2);
-  
+
   width: 23vw;
   height: 47rem;
 
   transition: all 0.2s ease;
 
+  @media only screen and (max-width: 62.6em) { //1000px
+    margin-bottom: 3rem;
+    width: 40rem;
+  }
+
   &__up {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
