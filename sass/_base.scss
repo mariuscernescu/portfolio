@@ -8,19 +8,18 @@
   // FONT VARIABLES
   --font-primary: "Poppins", sans-serif;
 
-  --shadow-dark: 0 .2rem 1rem rgba(71, 71, 71, 0.2);
-  --shadow-dark2: 0 .5rem 2rem rgba(65, 65, 65, 0.2);
-  --shadow-light: 0 .1rem 1rem rgba(71, 71, 71, 0.15);
+  --shadow-dark: 0 0.2rem 1rem rgba(71, 71, 71, 0.2);
+  --shadow-dark2: 0 0.5rem 2rem rgba(65, 65, 65, 0.2);
+  --shadow-light: 0 0.1rem 1rem rgba(71, 71, 71, 0.15);
   --shadow-large: 0 1.5rem 3rem rgba(48, 44, 44, 0.2);
 }
 
-$text-title:  7.2rem;
+$text-title: 7.2rem;
 $text-extra-large: 5.5rem;
 $text-large: 3.2rem;
 $text-medium: 2.1rem;
 $text-small: 1.7rem;
 $text-extra-small: 1.6rem;
-
 
 *,
 *::before,
@@ -33,6 +32,11 @@ $text-extra-small: 1.6rem;
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: 75em) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -40,4 +44,5 @@ body {
   color: var(--color-grey);
   font-weight: 400;
   line-height: 1.6;
+  
 }

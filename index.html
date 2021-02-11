@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Marius's Portfolio</title>
+    <title>Marius Cernescu</title>
   </head>
   <body>
     <section class="header">
@@ -24,20 +24,20 @@
       <h2 class="header__subtitle">Front end developer</h2>
 
       <nav class="header__nav">
-        <a href="#" class="btn btn--large"
+        <a href="#about" class="btn btn--large"
           ><span class="btn__text">About</span></a
         >
-        <a href="#" class="btn btn--large"
+        <a href="#projects" class="btn btn--large"
           ><span class="btn__text">Projects</span></a
         >
-        <a href="#" class="btn btn--large"
+        <a href="#contact" class="btn btn--large"
           ><span class="btn__text">Contact</span></a
         >
       </nav>
     </section>
 
     <section class="about">
-      <h1 class="about__header--primary">About</h1>
+      <h1 id="about" class="about__header--primary">About</h1>
       <div class="about__container">
         <div class="about__story">
           <p class="about__text">
@@ -85,7 +85,7 @@
     </section>
 
     <section class="projects">
-      <h1 class="about__header--primary">Projects</h1>
+      <h1 id="projects" class="about__header--primary">Projects</h1>
       <div class="projects__container">
         <div class="projectbox">
           <div class="projectbox__up">
@@ -132,37 +132,39 @@
       </div>
     </section>
 
-    <section class="contact">
-      <h1 class="about__header--primary">Contact</h1>
+    <section id="contact-form" class="contact">
+      <h1 id="contact" class="about__header--primary">Contact</h1>
       <div class="contact__container">
-        <form class="contact__form">
+        <form id="myform" class="contact__form">
           <p class="contact__text">
             If you’re looking for a new member in your team, drop me a line and
             let’s meet.
           </p>
           <input
             class="contact__name"
+            name="user_name"
             type="text"
             placeholder="name"
             required
           />
           <input
             type="email"
+            name="user_email"
             class="contact__email"
             placeholder="email"
             required
           />
-          <input type="text" class="contact__subject" placeholder="subject" />
+          <input type="text" name="contact_subject" class="contact__subject" placeholder="subject" />
 
-        
           <textarea
+            name="message"
             class="contact__message"
             placeholder="message"
             required
             rows="8"
-            cols="20"></textarea>
-           
-         
+            cols="20"
+          ></textarea>
+
           <button class="btn btn--large">
             <span class="btn__text">Submit</span>
           </button>
@@ -191,8 +193,26 @@
     </section>
 
     <footer class="footer">
-      <div class="footer__icon"><img src="/img/logo.svg" alt="site logo"></div>
+      <div class="footer__icon">
+        <img src="/img/logo.svg" alt="site logo" />
+      </div>
       <div class="footer__text"><p>Copyright © Marius Cernescu 2021</p></div>
     </footer>
   </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.js"
+    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_XaRpJR9wJvgYfIxDUDzSo");
+    })();
+  </script>
+  <script type="text/javascript" src="index.js"></script>
 </html>
