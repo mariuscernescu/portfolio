@@ -15,3 +15,11 @@ Page detail:
   * Links to social media
   * Contact form
   
+  **Tech stack**
+</br>
+HTML</br>
+CSS (Sass)</br>
+JavaScript</br>
+
+I used Block Element Modifier and Scss to better organize my code.
+  
