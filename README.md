@@ -11,4 +11,7 @@ Page detail:
   * Passapp
   * Maze Game
   * Personal Portfolio
+* Contact
+  * Links to social media
+  * Contact form
   
