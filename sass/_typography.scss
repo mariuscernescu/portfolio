@@ -6,12 +6,16 @@
 
     animation: moveInLeft 1s ease-in-out;
 
+    
+
     @media only screen and (max-width: 37.5em) {
       //600px
       font-size: $text-extra-large;
       text-align: center;
       
     }
+
+    
   }
 
   &__subtitle {
@@ -37,6 +41,19 @@
       font-size: $text-extra-large;
       font-weight: 200;
       margin: 4.5rem;
+      position: relative;
+      z-index: 4;
+
+      @media only screen and (max-width: 62.6em) {
+        //1000px
+        margin: 4.5rem;
+      
+      }
+      @media only screen and (max-width: 23.75em) {
+        //380px
+        margin: 1rem; 
+      }
+      
     }
 
     &--second {
@@ -60,16 +77,38 @@
   &__text {
     padding: 6rem;
     font-size: $text-small;
-    @media only screen and (max-width: 62.6em) {
-      //1000px
+    
+    @media only screen and (max-width: 75em) {
+      //1200px
       font-size: $text-medium;
     }
 
-    @media only screen and (max-width: 56.25em) {
-      //1000px
-      font-size: $text-small;
-      
+    @media only screen and (max-width: 68.75em) {
+      //1100px
+      font-size: $text-medium; 
     }
+    @media only screen and (max-width: 35.37em) {
+      //566px
+      margin-top: 7rem;
+     padding: 3rem;
+     font-size: $text-small; 
+    }
+
+    @media only screen and (max-width: 23.75em) {
+      //380px
+      
+     padding: 2rem;
+     font-size: $text-small; 
+     line-height: 1.4;
+    }
+
+    @media only screen and (max-width: 20em) {
+      //321px
+      line-height: 1.2; 
+      font-size: 1.5rem; 
+    }
+
+  
   }
 }
 
@@ -112,4 +151,22 @@ textarea::placeholder {
   font-family: var(--font-primary);
   font-size: $text-small;
   font-weight: 300;
+}
+
+.passapp {
+  &__header {
+    text-align: start;
+      font-size: $text-extra-large;
+      font-weight: 200;
+      margin: 4.5rem;
+      position: relative;
+  }
+
+  &__text {
+    font-size: $text-small;
+    margin: 4rem 2rem;
+    text-align: start;
+    
+    
+  }
 }
