@@ -1,0 +1,49 @@
+.passapp {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 20rem;
+    
+    
+    
+&__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+        width: 8rem;
+        
+    }
+}
+  &__description {
+      margin: 15rem 5rem 0 5rem;
+      background-color: var(--color-green);
+      text-align: center;
+      
+      flex-basis: 45%;
+      
+  }
+
+
+  &__visual {
+    margin-top: 15rem;
+      display: flex;
+      flex-direction: column;
+
+      img {
+          width: 60rem;
+      }
+
+  }
+
+  &__con2 {
+      display: flex;
+
+      img {
+          width: 30rem;
+      }
+
+  }
+}
