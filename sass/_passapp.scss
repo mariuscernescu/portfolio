@@ -1,49 +1,137 @@
 .passapp {
-    display: flex;
-    position: relative;
-    height: 100vh;
-    margin-bottom: 20rem;
-    
-    
-    
-&__logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  display: flex;
+  position: relative;
+  height: 130vh;
+  justify-content: center;
+  align-items: center;
+  
 
-    img {
-        width: 8rem;
-        
-    }
-}
-  &__description {
-      margin: 15rem 5rem 0 5rem;
-      background-color: var(--color-green);
-      text-align: center;
-      
-      flex-basis: 45%;
-      
+  box-shadow: var(--shadow-dark);
+  padding: 3rem 0 20rem 0;
+  margin: 1.5rem;
+
+  @media only screen and (max-width: 75em) {
+    //1200px
+    flex-direction: column;
+    height: 200vh;
   }
 
+  @media only screen and (max-width: 37.5em) {
+    //600px
+    height: 190vh;
+}
 
-  &__visual {
-    margin-top: 15rem;
-      display: flex;
-      flex-direction: column;
+  &__logo {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2rem;
 
-      img {
-          width: 60rem;
+    img {
+      width: 8rem;
+    }
+  }
+  &__description {
+    margin: 8rem 5rem 0 5rem;
+    background-color: var(--color-green);
+    text-align: center;
+    position: relative;
+
+    flex-basis: 45%;
+    @media only screen and (max-width: 75em) {
+        //1200px
+        margin-top: 10rem;
       }
 
+    @media only screen and (max-width: 37.5em) {
+        //600px
+        
+        flex-basis: 20%;
+        margin-top: 20rem;
+        margin-bottom: 5rem;
+    }
+
+    
+  }
+
+  &__visual {
+    margin-top: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      flex-direction: column;
+
+      margin-top: 3rem;
+      flex-basis: 30%;
+    }
+
+    img {
+      width: 71.5rem;
+      margin-bottom: 1.5rem;
+
+      @media only screen and (max-width: 37.5em) {
+        //600px
+        width: 80%;
+      }
+    }
+
+    &:hover .passapp__imgs:not(:hover) {
+      transform: scale(0.95);
+    }
   }
 
   &__con2 {
-      display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      flex-direction: column;
+    }
 
-      img {
-          width: 30rem;
+    img {
+      width: 35rem;
+      @media only screen and (max-width: 37.5em) {
+          //600px
+        width: 80%;
       }
 
+      &:first-child {
+        margin-right: 1.5rem;
+        @media only screen and (max-width: 37.5em) {
+            //600px
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 61rem;
+    left: 8rem;
+
+    @media only screen and (max-width: 75em) {
+      //1200px
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__imgs {
+    transition: all 0.2s ease-out;
+    &:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: var(--shadow-dark);
+      z-index: 20;
+    }
   }
 }

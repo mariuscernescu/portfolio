@@ -1,0 +1,133 @@
+html {
+  box-shadow: 0 0.2rem 1rem rgba(58, 58, 58, 0.2);
+  margin: 15px;
+}
+body {
+  position: relative;
+  background-color: #c6d7c7;
+  font-family: sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h1 {
+  color: white;
+  font-size: 56px;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 8px 30px;
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.winner2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.currentlvl {
+  position: absolute;
+  top: 1.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+
+  animation: vanish 2s ease-in;
+}
+
+.instructions {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  text-align: center;
+  opacity: 0;
+
+  animation: vanish 2.5s 2s ease-in;
+}
+
+@keyframes vanish {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #595959;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #595959;
+  padding: 12px 50px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.212);
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px (rgba(0, 0, 0, 0.315));
+}
+
+.start {
+  margin: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.start__label {
+  color: #595959;
+  font-size: 40px;
+}
+
+.start__input {
+  outline: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  height: 40px;
+  width: 85px;
+  padding-left: 70px;
+  font-size: 22px;
+  color: #595959;
+  border-style: solid;
+  border-color: #595959;
+}
+
+a {
+  color: #595959;
+  margin-top: 4rem;
+  font-size: 18px;
+}
