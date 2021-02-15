@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.js"
+      integrity="sha512-gYH92QFYJSMUZ5sOAtkAyyShHFf8cipWjMHVWD9f4244kx3xeSn7cUcep4UxaHCKwTKU/Nzq5Lk0EkbuQGkeSg=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script src="js/index.js" defer></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Game</title>
+  </head>
+  <body>
+    <div class="start">
+      <h1>The Maze Game</h1>
+      <label class="start__label" for="level"
+        >Choose a level from 1 to 10 </label
+      ><input
+        class="start__input"
+        type="number"
+        id="level"
+        name="level"
+        min="1"
+        max="10"
+        value="1"
+      />
+
+      <p class="start__label">Press Start to play</p>
+
+      <button class="btn" id="startbtn">Start</button>
+      <a
+        
+        target="_blank"
+        href="https://github.com/mariuscernescu/the-maze-game"
+        >View code on GitHub &rarr;</a
+      >
+    </div>
+
+    <h1 class="currentlvl hidden">
+      Level <span class="currentlvl__lvl">1</span>
+    </h1>
+
+    <h1 class="instructions hidden">Use the arrow keys to navigate</h1>
+
+    <div class="winner hidden">
+      <h1>Congratulations on your fantastic victory!</h1>
+    </div>
+
+    <div class="winner2 hidden">
+      <h1>Congratulations! You advanced to the next level</h1>
+    </div>
+  </body>
+</html>
