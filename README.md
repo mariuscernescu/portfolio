@@ -33,6 +33,6 @@ Page detail:
   
 **Tech stack**
 </br>
-HTML</br>
-CSS (Sass)</br>
-JavaScript</br>
+* HTML</br>
+* CSS (Sass)</br>
+* JavaScript</br>
