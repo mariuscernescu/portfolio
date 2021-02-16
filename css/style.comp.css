@@ -34,6 +34,8 @@ body {
   font-size: 7.2rem;
   font-weight: 400;
   margin-top: 8rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
   animation: moveInLeft 1s ease-in-out; }
   @media only screen and (max-width: 37.5em) {
     .header__title {
@@ -86,6 +88,9 @@ body {
   @media only screen and (max-width: 68.75em) {
     .about__text {
       font-size: 2.1rem; } }
+  @media only screen and (max-width: 48.2em) {
+    .about__text {
+      margin-top: 8rem; } }
   @media only screen and (max-width: 35.37em) {
     .about__text {
       margin-top: 7rem;
@@ -93,6 +98,8 @@ body {
       font-size: 1.7rem; } }
   @media only screen and (max-width: 23.75em) {
     .about__text {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
       padding: 2rem;
       font-size: 1.7rem;
       line-height: 1.4; } }
@@ -152,12 +159,27 @@ textarea::placeholder {
   .about__container {
     height: 100vh;
     display: flex; }
+    @media only screen and (max-height: 41.25em) {
+      .about__container {
+        height: 120vh; } }
+    @media only screen and (max-height: 36.25em) {
+      .about__container {
+        height: 125vh; } }
+    @media only screen and (max-height: 31.25em) {
+      .about__container {
+        height: 140vh; } }
     @media only screen and (max-width: 62.6em) {
       .about__container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 170vh; } }
+    @media only screen and (max-width: 26.25em) {
+      .about__container {
+        height: 180vh; } }
+    @media only screen and (max-width: 22.5em) {
+      .about__container {
+        height: 200vh; } }
   .about__story {
     width: 50%;
     background-color: var(--color-green);
@@ -193,7 +215,16 @@ textarea::placeholder {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
     @media only screen and (max-width: 23.75em) {
       .about__story {
-        height: 200rem; } }
+        flex-basis: 90rem; } }
+    @media only screen and (max-width: 22.5em) {
+      .about__story {
+        flex-basis: 90rem; } }
+    @media only screen and (max-height: 41.25em) {
+      .about__story {
+        height: 300rem; } }
+    @media only screen and (max-height: 31.25em) {
+      .about__story {
+        height: 300rem; } }
   .about__skills {
     width: 45%; }
     @media only screen and (max-width: 62.6em) {
@@ -454,18 +485,35 @@ textarea::placeholder {
   align-items: center;
   height: 100vh;
   box-shadow: var(--shadow-dark);
-  padding: 3rem 0 20rem 0;
+  padding: 0 0 20rem 0;
   margin: 1.5rem; }
+  @media only screen and (max-width: 20em) {
+    .header {
+      height: 125vh; } }
+  @media only screen and (max-height: 47.5em) {
+    .header {
+      padding: 0 0 10rem 0; } }
+  @media only screen and (max-height: 41.25em) {
+    .header {
+      padding: 0 0 8rem 0;
+      height: 110vh; } }
+  @media only screen and (max-height: 36.25em) {
+    .header {
+      padding: 0 0 8rem 0;
+      height: 125vh; } }
+  @media only screen and (max-height: 31.25em) {
+    .header {
+      padding: 0 0 8rem 0;
+      height: 140vh; } }
   .header__logo {
-    margin: 4rem;
+    margin: 1rem;
     height: 8rem;
     width: 8rem; }
     @media only screen and (max-width: 23.75em) {
       .header__logo {
-        margin-top: 4rem;
+        margin-top: 1rem;
         height: 7rem;
-        width: 7rem;
-        padding-top: 6rem; } }
+        width: 7rem; } }
   .header__nav {
     display: flex;
     flex-direction: column;

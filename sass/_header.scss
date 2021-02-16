@@ -6,21 +6,56 @@
   height: 100vh;
 
   box-shadow: var(--shadow-dark);
-  padding: 3rem 0 20rem 0;
+  padding: 0 0 20rem 0;
   margin: 1.5rem;
 
+  @media only screen and (max-width: 20em) {
+    //320px
+    height: 125vh;
+    
+  }
+
+  @media only screen and (max-height: 47.5em) {
+    //760px height
+    padding: 0 0 10rem 0;
+    
+  }
+
+  @media only screen and (max-height: 41.25em) {
+    //660px height
+    padding: 0 0 8rem 0;
+    height: 110vh;
+    
+  }
+
+  @media only screen and (max-height: 36.25em) {
+    //580px height
+    padding: 0 0 8rem 0;
+    height: 125vh;
+    
+  }
+
+  @media only screen and (max-height: 31.25em) {
+    //500px height
+    padding: 0 0 8rem 0;
+    height: 140vh;
+    
+  }
+
+
   &__logo {
-    margin: 4rem;
+    margin: 1rem;
     height: 8rem;
     width: 8rem;
 
     @media only screen and (max-width: 23.75em) {
       //380px
-      margin-top: 4rem;
+      margin-top: 1rem;
       height: 7rem;
       width: 7rem;
-      padding-top: 6rem;
+      
     }
+    
   }
 
   &__nav {
